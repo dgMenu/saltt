@@ -41,7 +41,7 @@
     }
 </style>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden flex flex-col min-h-screen">
 
 
 
@@ -53,111 +53,127 @@
             </div>
             <nav class="flex items-center gap-3 text-lg">
                 <a href="#">Home</a>
-                <a href="#">Menu</a>
+                <a href="menu.html">Menu</a>
             </nav>
         </div>
     </header>
 
 
-    <main class="bg-[url('img/display.jpg')] bg-no-repeat bg-cover bg-right-bottom">
-        <div class="w-full h-full bg-black/70 text-white">
-            <div class="box min-h-[80vh] flex flex-col items-center gap-4 justify-center">
-
-                <h1 class="uppercase font-black text-6xl lg:text-7xl w-[15ch] text-center">
-                    Taste the difference
-                </h1>
-                <p class="uppercase tracking-wider text-xl">
-                    only at
-                </p>
-                <img src="img/workmark.png" alt="Saltt Kitchen 'n Bar" class="h-20">
-
-                <div class="flex gap-5 mt-5">
-                    <a href="#"
-                        class="btn font-bold uppercase bg-saltt border-saltt pt-3 hover:opacity-80 transition-all duration-300">Take
-                        me there</a>
-                    <a href="#"
-                        class="btn font-bold uppercase border-saltt pt-3 hover:bg-saltt transition-all duration-300">What's
-                        cookin' ?</a>
-                </div>
-            </div>
-        </div>
-    </main>
+    <div class="flex-1">
 
 
 
-    <section>
-        <div class="box grid lg:grid-cols-2 gap-16 py-16">
-            <div class="flex gap-8 items-start max-w-2xl">
-                <img src="img/icons/cheese.png" alt="">
-                <div>
-                    <h3 class="font-bold text-3xl">Not just a restaurant, but also a party place.</h3>
-                    <p class="mt-2 text-lg">
-                        Pellentesque facilisis ante vel dolor posuere, id sagittis eros laoreet. Sed a lacinia justo.
-                        Vestibulum convallis pulvinar.
+
+
+        <main class="bg-[url('img/display.jpg')] bg-no-repeat bg-cover bg-left-bottom lg:bg-right-bottom relative">
+            <div class="w-full h-full bg-black/70 text-white">
+                <div class="box min-h-[80vh] flex flex-col items-center gap-4 justify-center overflow-x-hidden">
+
+                    <h1 class="uppercase font-black text-5xl md:text-6xl lg:text-7xl w-[15ch] text-center">
+                        Taste the difference
+                    </h1>
+                    <p class="uppercase tracking-wider text-xl">
+                        only at
                     </p>
+                    <img src="img/workmark.png" alt="Saltt Kitchen 'n Bar" class="h-20">
+
+                    <div class="flex gap-5 mt-5">
+                        <a href="#"
+                            class="btn font-bold uppercase bg-saltt border-saltt pt-3 hover:opacity-80 transition-all duration-300">Take
+                            me there</a>
+                        <a href="#"
+                            class="btn font-bold uppercase border-saltt pt-3 hover:bg-saltt transition-all duration-300">What's
+                            cookin' ?</a>
+                    </div>
                 </div>
+                <a href="#feature" class="absolute bottom-0 right-1/2 p-5 translate-x-1/2"><i
+                        class="fas fa-chevron-down text-center animate-bounce"></i></a>
             </div>
-            <div class="flex gap-8 items-start max-w-2xl">
-                <img src="img/icons/burger.png" alt="">
-                <div>
-                    <h3 class="font-bold text-3xl">Always the freshest ingredients.</h3>
-                    <p class="mt-2 text-lg">
-                        Pellentesque facilisis ante vel dolor posuere, id sagittis eros laoreet.
-                        Vestibulum convallis pulvinar.
-                    </p>
+        </main>
+
+
+
+        <section id="feature">
+            <div class="box grid lg:grid-cols-2 gap-16 py-16">
+                <div class="flex gap-8 items-start max-w-2xl">
+                    <img src="img/icons/cheese.png" alt="">
+                    <div>
+                        <h3 class="font-bold text-3xl">Not just a restaurant, but also a party place.</h3>
+                        <p class="mt-2 text-lg">
+                            Pellentesque facilisis ante vel dolor posuere, id sagittis eros laoreet. Sed a lacinia
+                            justo.
+                            Vestibulum convallis pulvinar.
+                        </p>
+                    </div>
                 </div>
+                <div class="flex gap-8 items-start max-w-2xl">
+                    <img src="img/icons/burger.png" alt="">
+                    <div>
+                        <h3 class="font-bold text-3xl">Always the freshest ingredients.</h3>
+                        <p class="mt-2 text-lg">
+                            Pellentesque facilisis ante vel dolor posuere, id sagittis eros laoreet.
+                            Vestibulum convallis pulvinar.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-
-        </div>
-    </section>
+        </section>
 
 
 
-    <section>
-        <div class="box py-28 flex flex-col items-center">
-            <h2 class="text-center font-black text-5xl relative w-fit px-4">
-                From the 'Gram
-                <span class="block absolute w-full bg-saltt-light h-6 bottom-0 right-1/2 translate-x-1/2 -z-10"></span>
-            </h2>
-            <div class="grid lg:grid-cols-3 gap-3 mt-12 w-full justify-items-center">
-                <img src="img/gallery/image1.jpg" alt="">
-                <img src="img/gallery/image2.jpg" alt="">
-                <img src="img/gallery/image3.jpg" alt="">
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="bg-[url('img/banner.jpg')] bg-no-repeat bg-cover bg-top">
-        <div class="h-full w-full bg-black/60 text-white">
-            <div class="box py-20 pt-28">
-                <h2 class="font-black text-5xl drop-shadow-lg text-center leading-[4rem]">
-                    Let's
-                    मीट
-                    at SALTŤ
+        <section>
+            <div class="box py-28 flex flex-col items-center">
+                <h2 class="text-center font-black text-5xl relative w-fit px-4">
+                    From the 'Gram
+                    <span
+                        class="block absolute w-full bg-saltt-light h-6 bottom-0 right-1/2 translate-x-1/2 -z-10"></span>
                 </h2>
+                <div class="grid lg:grid-cols-3 gap-3 mt-12 w-full justify-items-center">
+                    <img src="img/gallery/image1.jpg" alt="">
+                    <img src="img/gallery/image2.jpg" alt="">
+                    <img src="img/gallery/image3.jpg" alt="">
+                </div>
+
             </div>
-        </div>
-    </section>
+        </section>
+
+
+        <section class="bg-[url('img/banner.jpg')] bg-no-repeat bg-cover bg-center">
+            <div class="h-full w-full bg-black/60 text-white">
+                <div class="box py-20 pt-28">
+                    <h2 class="font-black text-5xl drop-shadow-lg text-center leading-[4rem]">
+                        Let's
+                        मीट
+                        at SALTŤ
+                    </h2>
+                </div>
+            </div>
+        </section>
 
 
 
-    <section>
-        <div class="box py-28 flex flex-col items-center">
-            <!-- <h2 class="text-center font-black text-4xl lg:text-5xl relative w-fit px-4">
+        <section>
+            <div class="box py-28 flex flex-col items-center">
+                <!-- <h2 class="text-center font-black text-4xl lg:text-5xl relative w-fit px-4">
                 Come
                 <span class="block absolute w-full bg-saltt-light h-6 bottom-0 right-1/2 translate-x-1/2 -z-10"></span>
             </h2> -->
-            <div class="grid gap-3 mt-12 w-full">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1923.8804993250792!2d73.99616924965169!3d15.335218300901882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb1db9fcaac97%3A0xe14bb739b4c8c375!2sSALTT%20Kitchen%20n%20Bar!5e0!3m2!1sen!2sin!4v1655573776465!5m2!1sen!2sin"
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    height="400" class="w-full"></iframe>
-            </div>
+                <div class="grid gap-3 mt-12 w-full">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1923.8804993250792!2d73.99616924965169!3d15.335218300901882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb1db9fcaac97%3A0xe14bb739b4c8c375!2sSALTT%20Kitchen%20n%20Bar!5e0!3m2!1sen!2sin!4v1655573776465!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        height="400" class="w-full"></iframe>
+                </div>
 
-        </div>
-    </section>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
 
 
     <footer class="bg-saltt-light">
