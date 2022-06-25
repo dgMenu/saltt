@@ -1,4 +1,4 @@
-import subCategory from "./subCategory";
+// import subCategory from "./subCategory";
 
 export default {
   name: "category",
@@ -20,12 +20,12 @@ export default {
       name: "available",
       title: "Available",
     },
-    {
-      type: "array",
-      name: "subCategory",
-      title: "subCategory",
-      of: [subCategory],
-    },
+    // {
+    //   type: "array",
+    //   name: "subCategory",
+    //   title: "subCategory",
+    //   of: [subCategory],
+    // },
   ],
   initialValue: {
     available: true,
