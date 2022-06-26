@@ -11,6 +11,17 @@ export default {
       title: "Name",
     },
     {
+      title: "Slug",
+      name: "slug",
+      type: "slug",
+      options: {
+        source: "name",
+        maxLength: 200,
+        slugify: (input) =>
+          input.toLowerCase().replace(/\s+/g, "-").slice(0, 200),
+      },
+    },
+    {
       type: "string",
       name: "description",
       title: "Description",
@@ -20,12 +31,12 @@ export default {
       name: "available",
       title: "Available",
     },
-    // {
-    //   type: "array",
-    //   name: "subCategory",
-    //   title: "subCategory",
-    //   of: [subCategory],
-    // },
+    {
+      type: "number",
+      name: "index",
+      title: "Index",
+    },
+
   ],
   initialValue: {
     available: true,

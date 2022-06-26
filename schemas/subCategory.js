@@ -1,4 +1,3 @@
-import category from "./category";
 import item from "./item";
 
 export default {
